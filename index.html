@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profil Gempa Adventure Ponorogo</title>
+    <title>Profil Gempa Adventure</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         body {
@@ -13,7 +13,7 @@
             background-color: #f9f9f9;
         }
 
-        .pdf-header {
+        .image-header {
             background-color: #007BFF;
             color: white;
             text-align: center;
@@ -26,20 +26,38 @@
             z-index: 1000;
         }
 
-        .pdf-iframe {
+        .image-container {
             position: absolute;
             top: 60px;
             left: 0;
             width: 100%;
             height: calc(100% - 60px);
-            border: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow-y: auto;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
         }
     </style>
 </head>
 <body>
-    <div class="pdf-header">
-        Profil Gempa Adventure Ponorogo
+    <div class="image-header">
+        Profil Gempa Adventure
     </div>
-    <iframe class="pdf-iframe" src="Community Profile-2.pdf"></iframe>
+    <div class="image-container">
+        <img src="1.png" alt="Image 1">
+        <img src="2.png" alt="Image 2">
+        <img src="3.png" alt="Image 3">
+        <img src="4.png" alt="Image 4">
+        <img src="5.png" alt="Image 5">
+    </div>
 </body>
 </html>
